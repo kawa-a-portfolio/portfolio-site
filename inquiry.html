@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCH DESIGN</title>
+  <meta name="description" content="ARCH DESIGN 三重県いなべ市の自然豊かな立地に注文住宅を建てるならARCH DESIGNにお任せください">
+
+  <!-- ファビコン -->
+  <link rel="icon" href="image/favicon.ico">
+  <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- リセットCSS・スタイルCSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <!-- ロゴ -->
+      <div class="header__logo">
+        <a href="index.html">ARCH DESIGN</a>
+      </div>
+      <!-- ナビゲーション -->
+      <nav class="nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="index.html">トップ</a>
+          </li>
+          <li class="header__item">
+            <a href="service.html">サービス内容</a>
+          </li>
+          <li class="header__item header__item--cta">
+            <a href="inquiry.html">無料相談・お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+  <!-- ハンバーガーボタン（SP用） -->
+      <button class="burger" aria-label="メニューを開閉する" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- お問い合わせ　ここから -->
+  <main class="inquiry">
+
+  <!-- メインビジュアル -->
+  <section class="inquiry-mv">
+    <img src="image/kv_inquiry.png" alt="無料相談・お問い合わせ">
+    <div class="inquiry-mv__content">
+      <h1 class="inquiry-mv__title">無料相談・お問い合わせ</h1>
+      <p class="inquiry-mv__subtitle">Inquiry</p>
+    </div>
+  </section>
+
+
+  <!-- 導入 -->
+  <section class="inquiry-intro">
+    <div class="inner">
+
+      <h2 class="inquiry-intro__title">
+        まずはお気軽に<br class="sp-br">お問い合わせください
+      </h2>
+
+      <p class="inquiry-intro__text">
+        無料相談・お問い合わせは下記のフォームから<br class="sp-br">お願いいたします。<br>
+        3日営業日以内にご連絡させていただきます。
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- フォーム -->
+  <section class="contact-form">
+
+    <div class="inner">
+
+      <h2 class="contact-form__title">
+        お問い合わせフォーム
+      </h2>
+
+
+      <form class="contact-form__form">
+
+  <!-- 種類 -->
+  <div class="contact-form__group">
+
+    <label class="contact-form__label">
+      種類<span class="required">*</span>
+    </label>
+
+    <div class="contact-form__radio">
+
+      <label>
+        <input type="radio" name="type" value="service" required>
+        サービスに関するお問い合わせ
+      </label>
+
+      <label>
+        <input type="radio" name="type" value="visit">
+        来店予約のお問い合わせ
+      </label>
+
+      <label>
+        <input type="radio" name="type" value="document">
+        資料請求
+      </label>
+
+      <label>
+        <input type="radio" name="type" value="other">
+        その他
+      </label>
+
+    </div>
+
+  </div>
+
+
+  <!-- 名前 -->
+  <div class="contact-form__group">
+
+    <label class="contact-form__label">
+      お名前<span class="required">*</span>
+    </label>
+
+    <input type="text" name="name" class="contact-form__input" required>
+
+  </div>
+
+
+  <!-- メール -->
+  <div class="contact-form__group">
+
+    <label class="contact-form__label">
+      メールアドレス<span class="required">*</span>
+    </label>
+
+    <input type="email" name="email" class="contact-form__input" required>
+
+  </div>
+
+
+  <!-- 内容 -->
+  <div class="contact-form__group">
+
+    <label class="contact-form__label">
+      詳細内容<span class="required">*</span>
+    </label>
+
+    <textarea name="message" class="contact-form__textarea" required></textarea>
+
+  </div>
+
+
+  <!-- 送信ボタン -->
+  <div class="contact-form__submit-wrapper">
+
+    <button type="submit" class="contact-form__submit">
+      送信する
+    </button>
+
+  </div>
+
+</form>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- フッター -->
+<footer class="footer">
+
+  <div class="footer__inner">
+
+    <div class="footer__top">
+
+      <div class="footer__logo">
+        ARCH DESIGN
+      </div>
+
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="service.html">サービス内容</a></li>
+          <li><a href="inquiry.html">無料相談・お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <p class="footer__copy">
+      Copyright © ARCH DESIGN. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- 自分のJS（一番最後に読み込む） -->
+  <script src="js/main.js"></script>
+</body>
+</html>
